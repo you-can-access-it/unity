@@ -1,0 +1,173 @@
+Practical 1
+Aim
+Install Unity Hub and execute basic C# scripts using conditions and loops. 
+PRACTICAL NO 1
+Steps
+1.	Open Unity Hub.
+2.	Click New Project → 2D Core → Create.
+3.	Go to Hierarchy → Right Click → Create Empty Object.
+4.	Name it ScriptObject.
+5.	Go to Assets → Create → C# Script.
+6.	Name it BasicScript.
+7.	Open the script in Visual Studio.
+8.	Write the required code (if-else, switch, loops).
+9.	Save the script.
+10.	Drag the script onto the ScriptObject.
+11.	Click Play.
+12.	View output in Console Window.
+________________________________________
+Practical 2
+Aim
+Implement Translation, Rotation and Scaling on a 2D object. 
+PRACTICAL2ofUNITY
+Steps
+1.	Create 2D Project in Unity.
+2.	In Hierarchy → Right Click → 2D Object → Sprite → Square.
+3.	Rename it Player.
+4.	Select Player → Add Component → Rigidbody2D.
+5.	Set Gravity Scale = 0.
+6.	Go to Assets → Create → C# Script.
+7.	Name script TransformScript.
+8.	Write code for translation, rotation, and scaling.
+9.	Attach script to Player.
+10.	Click Play to see movement.
+________________________________________
+Practical 3
+Aim
+Implement Jump effect and movement. 
+PRACTICAL NO 3_UNITY
+Steps
+1.	Create 2D project.
+2.	Add Circle sprite in Hierarchy.
+3.	Rename it Player.
+4.	Add Rigidbody2D component.
+5.	Set Gravity Scale = 1.
+6.	Create Square object and rename it Ground.
+7.	Add BoxCollider2D to ground.
+8.	Create new C# Script → JumpMove.
+9.	Write code for jump and movement.
+10.	Attach script to Player.
+11.	Click Play.
+12.	Press Arrow keys to move and Space to jump.
+________________________________________
+Practical 4
+Aim
+Demonstrate Unity UI Components (Image, Button, Toggle, Slider). 
+Practical4UNITY
+Steps
+Add Image
+1.	Right click Hierarchy → UI → Image.
+2.	Import PNG image into Assets.
+3.	Drag image into Source Image field.
+Add Button
+1.	Right click Hierarchy → UI → Button.
+2.	Change button text.
+3.	Create script for button action.
+4.	Assign function in OnClick().
+Add Toggle
+1.	Right click Hierarchy → UI → Toggle.
+2.	Add script if required.
+Add Slider
+1.	Right click Hierarchy → UI → Slider.
+2.	Adjust Min and Max values.
+________________________________________
+Practical 5
+Aim
+Implement Surface Effector and Area Effector. 
+PRACTICAL NO 5
+Steps
+Surface Effector
+1.	Create Circle object (Player).
+2.	Add Rigidbody2D + CircleCollider2D.
+3.	Create platforms using squares.
+4.	Add BoxCollider2D to platforms.
+5.	Add Surface Effector 2D to platform.
+6.	Set Surface Arc = 180.
+7.	Create JumpMove script.
+8.	Attach script to player.
+9.	Press Play.
+10.	Player automatically moves on platform.
+Area Effector
+1.	Create large square.
+2.	Add Area Effector 2D.
+3.	Add BoxCollider2D.
+4.	When player enters area → force is applied.
+________________________________________
+Practical 6
+Aim
+Scene Management in Unity using buttons. 
+PRACTICAL NO 6
+Steps
+1.	Create two scenes (MainScene and TestScene).
+2.	Go to File → Build Settings → Add Scenes.
+3.	Right click Hierarchy → UI → Button.
+4.	Create 4 buttons.
+5.	Rename buttons (Load, Add, Unload, Async).
+6.	Create ScriptManager script.
+7.	Write scene loading code.
+8.	Attach script to GameObject.
+9.	Assign functions to Button OnClick().
+10.	Run scene and test button actions.
+________________________________________
+Practical 7
+Aim
+Add Audio Source in Unity. 
+Practical 7_UNITY
+Steps
+1.	Download MP3 audio file.
+2.	Drag audio file into Assets folder.
+3.	Select a GameObject (camera or object).
+4.	Click Add Component → Audio Source.
+5.	Drag audio file into Audio Clip.
+6.	Enable Play On Awake.
+7.	Click Play.
+8.	Audio will start automatically.
+________________________________________
+Practical 8
+Aim
+Find Range and Angle between two 3D objects. 
+prac8_UNITY
+Steps
+1.	Create 3D project.
+2.	Add two objects (Cube and Sphere).
+3.	Create script RangeChecker.
+4.	Assign target object in Inspector.
+5.	Create second script DegreeChecker.
+6.	Attach scripts to object.
+7.	Press Play.
+8.	Distance and angle appear in Console.
+________________________________________
+Practical 9
+Aim
+Implement NavMesh AI Navigation. 
+PRACTICAL NO 9_unity
+Steps
+1.	Create Plane as ground.
+2.	Add Cube and Capsule objects.
+3.	Install AI Navigation package from Package Manager.
+4.	Create Empty Object → NavMesh.
+5.	Add NavMesh Surface component.
+6.	Click Bake.
+7.	Select AI object.
+8.	Add NavMesh Agent component.
+9.	Assign target object.
+10.	Run scene → AI moves toward target.
+________________________________________
+Practical 10
+Aim
+Implement Animation in Unity. 
+PRACTICAL NO 10_unity
+Steps
+1.	Download character animations (FBX).
+2.	Import them into Assets → Animations folder.
+3.	Drag character into scene.
+4.	Extract materials and textures.
+5.	Create Animator Controller.
+6.	Add animations to controller.
+7.	Create transitions between animations.
+8.	Create script Animation_Script.
+9.	Attach script to character.
+10.	Run scene.
+11.	Press W → Walk.
+12.	Press D → Run.
+
