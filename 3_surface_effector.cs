@@ -5,16 +5,30 @@ public class surface_effector : MonoBehaviour
     public float force = 1f;
     public float speed = 10f;
     private Rigidbody2D rb2d;
-    private float movex;
-    private SpriteRenderer sr;
+    private float movex; 
+    private SpriteRenderer sr; // only for colour change
 
      void Start()
     {
        rb2d = GetComponent<Rigidbody2D>();
-       sr = GetComponent<SpriteRenderer>();
+       sr = GetComponent<SpriteRenderer>();// only for colour change
     }
 
-    // Update is called once per frame
+    //surface effect movement code without colour change
+    void Update()
+    {
+         moveX = Input.GetAxis("Horizontal");
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x,jumpforce);
+        }
+    }
+    void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2 (moveX*moveSpeed,rb.linearVelocity.y);
+    }
+
+    //Colour chnage code 
     void Update()
     {
         movex = Input.GetAxis("Horizontal");
