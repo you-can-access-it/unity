@@ -20,12 +20,12 @@ public class surface_effector : MonoBehaviour
          moveX = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x,force);
+            rb2d.linearVelocity = new Vector2(rb2d.linearVelocity.x, force);
         }
     }
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2 (moveX*moveSpeed,rb.linearVelocity.y);
+        rb2d.linearVelocity = new Vector2 (movex*speed,rb2d.linearVelocity.y);
     }
 
     //Colour chnage code 
