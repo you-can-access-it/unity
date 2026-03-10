@@ -20,7 +20,7 @@ public class surface_effector : MonoBehaviour
          moveX = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x,jumpforce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x,force);
         }
     }
     void FixedUpdate()
